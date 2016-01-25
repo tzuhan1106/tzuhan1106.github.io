@@ -16,7 +16,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
   <!-- 引入CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
-    
+  <script src="js/active.js"></script>
 </head>
 <body>
   <!-- 這裡放 menu bar (nav bar) -->
@@ -45,7 +45,22 @@
     </div>
   </div>
    <div class="extra content">
-    <a><i class="users icon"></i> 2 成員 </a>
+            <button id="showmybtn" class="ui grey basic button">
+              Show my detail
+            </button>
+        <div class="ui modal">
+            <i class="close icon"></i>
+            <div class="header">
+            My detail
+            </div>
+        <div class="image content">
+            <img class="ui medium image">
+            <img src="img/icon.jpg">
+            <div class="description">
+            <p>嗨~我是徐子涵 :)) </p>
+       </div>
+  </div>
+        </div>
   </div>
 </div>
   </div>
