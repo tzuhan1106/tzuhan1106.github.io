@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/ninja/ninja-slider.css">
+  <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 引入Ｊquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- 引入Ｊs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
+  <!-- 引入CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
+  <script src="js/active.js"></script>
+  <script src="js/ninja/ninja-slider.js"></script>
+
+</head>
+<body>
+  <!-- 這裡放 menu bar (nav bar) -->
+<div class="ui fixed grey inverted four item labeled icon menu">
+    <a id="mbtn1" class="item" href="#photoSlide">
+      <i class="gamepad icon"></i>
+      Home
+    </a>
+    <a id="mbtn2" class="item" href="#selfIntroduction">
+      <i class="user icon"></i>
+      About me
+    </a>
+    <a id="mbtn3" class="item" href="#timelinejs">
+      <i class="heartbeat icon" ></i>
+      Sotory
+    </a>
+    <a id="mbtn4" class="item" href="#contactMe">
+      <i class="phone icon"></i>
+      Contact me
+    </a>
+  </div>
+
+  <div class="space"></div>
+  <!-- 這裡放 照片slide -->
+  <div id="photoSlide">
+    <div id="ninja-slider">
+      <div class="slider-inner">
+        <ul id="inphoto">
+        </ul>
+        <div class="navsWrapper">
+            <div id="ninja-slider-prev"></div>
+            <div id="ninja-slider-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- 這裡放 自我介紹 -->
+<div id="selfIntroduction" class="section">
+  <div class="space"></div>
+
+ <div class="ui stackable three column grid container">
+  <div class="ui centered slide card">
+  <div class="ui slide masked reveal image">
+    <img src="./img/自我介紹2.jpg" class="visible content">
+    <img src="./img/123.jpg" class="hidden content">
+  </div>
+  <div class="content">
+    <a class="header">徐子涵</a>
+    <div class="meta">
+      <span class="date">Welcome to my home! </span>
+    </div>
+  </div>
+   <div class="extra content">
+
+            <button id="showmybtn" class="ui  blue basic centered button">
+              Show my detail
+            </button>
+        <div class="ui modal">
+            <i class="close icon"></i>
+            <div class="header">
+            My detail
+            </div>
+          <div class="image content">
+            <div class="ui medium image">
+                  <img src="./img/icon.jpg">
+            </div>
+            <div class="description">
+                <div class="ui header">
+                   Hi~我是徐子涵 ^ ^
+                </div>
+                <p>Welcome to my home~ </p>
+            </div>
+          </div>       
+        </div>
+    </div>
+  </div>
+        <!-- show myskill-->
+      <div id='myskill' class="ui centered column" >
+        <i class="big configure icon">Language</i>
+        <div style="height:5px;"></div>
+        <div id="p_java" class="ui yellow active progress">
+          <div class="bar" style="width:50%">
+            <div class="progress">50%</div>
+          </div>
+          <div class="label">C語言</div>
+        </div>
+        <div id="p_c" class="ui yellow active progress">
+          <div class="bar" style="width:50%">
+            <div class="progress">50%</div>
+          </div>
+          <div class="label">Java</div>
+        </div>
+        <div id="p_vb" class="ui orange active progress">
+          <div class="bar" style="width:30%">
+            <div class="progress">30%</div>
+          </div>
+          <div class="label">Visual Basic</div>
+        </div>
+        <div id="p_html" class="ui green active progress">
+          <div class="bar" style="width:10%">
+            <div class="progress">10%</div>
+          </div>
+          <div class="label">Html</div>
+        </div>
+        <div id="p_js" class="ui green active progress">
+          <div class="bar" style="width:10%">
+            <div class="progress">10%</div>
+          </div>
+          <div class="label">JavaScript</div>
+        </div>
+      </div>
+            <!-- show software-->
+      <div id='software' class="ui centered column">
+        <i class="big file icon">Software</i>
+        <div style="height:5px;"></div>
+        <div id="p_word" class="ui purple active progress">
+          <div class="bar" style="width:70%">
+            <div class="progress">70%</div>
+          </div>
+          <div class="label">Word</div>
+        </div>
+        <div id="p_ppt" class="ui purple active progress">
+          <div class="bar" style="width:70%">
+            <div class="progress">70%</div>
+          </div>
+          <div class="label">Power Point</div>
+        </div>
+        <div id="p_access" class="ui pink active progress">
+          <div class="bar" style="width:50%">
+            <div class="progress">50%</div>
+          </div>
+          <div class="label">Access</div>
+        </div>
+        <div id="p_ps" class="ui teal active progress">
+          <div class="bar" style="width:40%">
+            <div class="progress">40%</div>
+          </div>
+          <div class="label">Photoshop</div>
+        </div>
+        <div id="p_ila" class="ui olive active progress">
+          <div class="bar" style="width:20%">
+            <div class="progress">20%</div>
+          </div>
+          <div class="label">Illustrator</div>
+        </div>
+      </div>
+ </div>
+</div>
+    <!-- 這裡放 timelinejs -->
+  <div id="timelinejs" class="section">
+    <iframe src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1ZJPX3Twi0o1T71gdoj11FidbfLp8tNIgNNxDBEAsNSw&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+  </div>
+  <!-- 這裡放 聯絡我 -->
+  <div id="contactMe" class="section">
+    <section id="para-laptop" class="parallax-container">
+      <div class="parallax">
+        <img class="workspace" src="img/test.jpg">
+      </div>
+    </section>
+  </div>
+  <!-- 這裡放 footer -->
+  <div class="ui blue inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui stackable inverted divided grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">Contact Me</h4>
+          <div class="actions">
+            <a href="https://www.facebook.com/profile.php?id=100002531496354" target="_blank">
+            <button class="ui circular facebook icon button">
+              <i class="facebook icon"></i>
+            </button>
+            </a>
+            <a href="https://github.com/tzuhan1106" target="_blank">
+            <button class="ui circular github icon button">
+              <i class="github icon"></i>
+            </button>
+
+            </a>
+            <a href="https://www.instagram.com/tsz_han1106" target="_blank">
+            <button class="ui circular instagram icon button">
+              <i class="instagram icon"></i>
+            </button>
+            </a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">My Country</h4>
+          <div class="ui inverted link list">
+            <i class="big tw flag"></i>
+            <p>Taiwan</p>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Occupation</h4>
+          <div class="ui inverted link list">
+            <p>University Student</p>
+            <a class="item" href="http://www.nchu.edu.tw/index1.php" target="_blnak">My school</a>
+           
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Thanks for your watching</h4>
+          <p>If you have any question,you can use contact me segment send message to me.In addition,you can be my friend through Facebook.</p>
+        </div>
+      </div>
+      <div class="ui inverted divider"></div>
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Designed by PeiYao Chang</a>
+        <a class="item" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>    
