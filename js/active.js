@@ -57,42 +57,15 @@ $(document).ready(function(){
       .modal('show');
   });
 
-  // contact me form control
-  $('.ui.form.segment')
-    .form({
-      on: 'blur',
-      fields: {
-        empty: {
-          identifier  : 'yourname',
-          rules: [
-            {
-              type   : 'empty',
-              prompt : 'Please enter your name'
-            }
-          ]
-        },
-        email: {
-          identifier  : 'youremail',
-          rules: [
-            {
-              type   : 'email',
-              prompt : 'Please enter a valid e-mail'
-            }
-          ]
-        },
-        tellempty: {
-          identifier  : 'tellmewhat',
-          rules: [
-            {
-              type   : 'empty',
-              prompt : 'Please enter value in You want to tell me what'
-            }
-          ]
-        }
-      }
-    });
+
   //aniview control  
-  
+  $('.header').hover(
+    function(){
+      $(this).css( "color", "cornflowerblue" );
+    },function() {
+      $( this ).css( "color", "black" );
+    }
+  )
   var options = {
        animateThreshold: 100,
        scrollPollInterval: 20

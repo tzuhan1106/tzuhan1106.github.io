@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>tzuhan</title>
-  
+  <!--title icon-->
+  <link rel="shortcut icon" href="img/aaa.gif" />
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/ninja/ninja-slider.css">
@@ -22,38 +23,40 @@
 </head>
 <body>
   <!-- 這裡放 menu bar (nav bar) -->
-<div class="ui fixed grey inverted four item labeled icon menu">
+ <div class="ui fixed grey inverted four item labeled icon menu">
+    
     <a id="mbtn1" class="item" href="#photoSlide">
-      <i class="gamepad icon"></i>
-      Home
+      <i class="yellow home icon"></i>
+      <span style="font-family:cursive;">Home</span>
     </a>
     <a id="mbtn2" class="item" href="#selfIntroduction">
-      <i class="user icon"></i>
-      About me
+      <i class="blue user icon"></i>
+      <span style="font-family:cursive;">About me</span>
     </a>
     <a id="mbtn3" class="item" href="#timelinejs">
-      <i class="heartbeat icon" ></i>
-      Sotory
+      <i class="red heartbeat icon" ></i>
+      <span style="font-family:cursive;">My story</span>
     </a>
     <a id="mbtn4" class="item" href="#contactMe">
-      <i class="phone icon"></i>
-      Contact me
+      <i class="green phone icon"></i>
+      <span style="font-family:cursive;">Contact me</span>
     </a>
+   
   </div>
 
   <div class="space"></div>
   <!-- 這裡放 照片slide -->
-  <div id="photoSlide">
-    <div id="ninja-slider">
-      <div class="slider-inner">
+  <div id="photoSlide" >
+      <div id="ninja-slider" >
+      <div class="slider-inner" >
         <ul id="inphoto">
         </ul>
-        <div class="navsWrapper">
+        <div class="navsWrapper" >
             <div id="ninja-slider-prev"></div>
             <div id="ninja-slider-next"></div>
         </div>
       </div>
-    </div>
+      </div>
   </div>
 
    <!-- 這裡放 自我介紹 -->
@@ -63,42 +66,80 @@
  <div class="ui stackable three column grid container">
   <div class="ui centered slide card">
   <div class="ui slide masked reveal image">
-    <img src="./img/自我介紹2.jpg" class="visible content">
-    <img src="./img/123.jpg" class="hidden content">
+    <img src="./img/linepic.jpg" class="visible content">
+    <img src="./img/自我介紹2.jpg" class="hidden content">
   </div>
   <div class="content">
     <a class="header">徐子涵</a>
     <div class="meta">
-      <span class="date">Welcome to my home! </span>
+      <span class="date" style="font-family:monospace;">
+        <font color="#4169E1">
+         Welcome to my home! 
+        </font>
+      </span>
     </div>
   </div>
    <div class="extra content">
-
-            <button id="showmybtn" class="ui  blue basic centered button">
+        <button id="showmybtn" class="ui  centered blue basic button">
               Show my detail
-            </button>
+        </button>
         <div class="ui modal">
             <i class="close icon"></i>
             <div class="header">
-            My detail
+            <span style="font-family:cursive;">
+              My detail
+            </span>
             </div>
           <div class="image content">
             <div class="ui medium image">
-                  <img src="./img/icon.jpg">
+                  <img src="./img/me.jpg">
             </div>
             <div class="description">
                 <div class="ui header">
-                   Hi~我是徐子涵 ^ ^
+                   Hi~我是徐子涵 ^__^
                 </div>
-                <p>Welcome to my home~ </p>
-            </div>
-          </div>       
+                <font face="DFKai-sb">
+                <p>出生於1995/11/6 ，桃園人</p>
+                <p>目前就讀於中興大學資訊工程學系</p>
+                <p>也在中興大學親善大使團擔任美工長</p>
+                <P>選擇就讀資工系，有一部份的原因是受到媽媽的影響...</P>
+                <p>媽媽是一位受人敬佩又優秀的工程師，從小耳濡目染，從媽媽那裡學了不少電腦相關知識，也不排斥漸漸地想更深入了解...</p>
+                <P>因此，我立志成為像媽媽一樣受人景仰又能幫助到他人的工程師!</P>
+                <p>最後，很謝謝你來參觀我的網站，若你想更認識我的話，可以加我的Facebook。若只是隨意瀏覽的話，也非常歡迎^ ^</p>
+                </font>
+                </div>
+          </div>
+          <div class="actions">
+                <a href="https://www.facebook.com/profile.php?id=100002531496354" target="_blank">
+                  <button class="ui facebook button">
+                    <i class="facebook icon"></i>
+                    Facebook
+                  </button>
+                </a>      
+                <a href="https://github.com/tzuhan1106" target="_blank">
+                  <button class="ui github button">
+                    <i class="github icon"></i>
+                    Github
+                  </button>
+                </a>
+                <div class="ui positive right labeled icon button">
+                  Yep, that's me
+                  <i class="thumbs outline up icon"></i>
+                </div>                       
+          </div>    
         </div>
     </div>
   </div>
         <!-- show myskill-->
       <div id='myskill' class="ui centered column" >
-        <i class="big configure icon">Language</i>
+
+      <span style="font-family:cursive;">
+      <i class="big configure icon"></i>
+      <font size="5">
+        Language
+      </font>
+      </span> 
+
         <div style="height:5px;"></div>
         <div id="p_java" class="ui yellow active progress">
           <div class="bar" style="width:50%">
@@ -128,16 +169,23 @@
           <div class="bar" style="width:10%">
             <div class="progress">10%</div>
           </div>
-          <div class="label">JavaScript</div>
+          <div class="label">SQL</div>
         </div>
       </div>
             <!-- show software-->
       <div id='software' class="ui centered column">
-        <i class="big file icon">Software</i>
+        
+        <span style="font-family:cursive;">
+        <i class="big file icon"></i>
+        <font size="5">
+          Software
+        </font>
+        </span>
+       
         <div style="height:5px;"></div>
-        <div id="p_word" class="ui purple active progress">
-          <div class="bar" style="width:70%">
-            <div class="progress">70%</div>
+        <div id="p_word" class="ui pink active progress">
+          <div class="bar" style="width:80%">
+            <div class="progress">80%</div>
           </div>
           <div class="label">Word</div>
         </div>
@@ -147,7 +195,7 @@
           </div>
           <div class="label">Power Point</div>
         </div>
-        <div id="p_access" class="ui pink active progress">
+        <div id="p_access" class="ui yellow active progress">
           <div class="bar" style="width:50%">
             <div class="progress">50%</div>
           </div>
@@ -170,21 +218,20 @@
 </div>
     <!-- 這裡放 timelinejs -->
   <div id="timelinejs" class="section">
+
     <iframe src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1ZJPX3Twi0o1T71gdoj11FidbfLp8tNIgNNxDBEAsNSw&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+
   </div>
   <!-- 這裡放 聯絡我 -->
   <div id="contactMe" class="section">
-    <section id="para-laptop" class="parallax-container">
-      <div class="parallax">
-        <img class="workspace" src="img/test.jpg">
-      </div>
-    </section>
+
   </div>
   <!-- 這裡放 footer -->
-  <div class="ui blue inverted vertical footer segment">
+
+  <div class="ui grey inverted vertical footer segment">
     <div class="ui center aligned container">
       <div class="ui stackable inverted divided grid">
-        <div class="three wide column">
+          <div class="three wide column">
           <h4 class="ui inverted header">Contact Me</h4>
           <div class="actions">
             <a href="https://www.facebook.com/profile.php?id=100002531496354" target="_blank">
@@ -196,11 +243,16 @@
             <button class="ui circular github icon button">
               <i class="github icon"></i>
             </button>
-
             </a>
             <a href="https://www.instagram.com/tsz_han1106" target="_blank">
             <button class="ui circular instagram icon button">
               <i class="instagram icon"></i>
+            </button>
+            </a>
+            </a>
+            <a href="mailto:smile110611@gmail.com" target="_blank">
+            <button class="ui circular mail icon button">
+              <i class="mail icon"></i>
             </button>
             </a>
           </div>
@@ -208,7 +260,7 @@
         <div class="three wide column">
           <h4 class="ui inverted header">My Country</h4>
           <div class="ui inverted link list">
-            <i class="big tw flag"></i>
+            <i class="massive tw flag"></i>
             <p>Taiwan</p>
           </div>
         </div>
@@ -221,13 +273,15 @@
           </div>
         </div>
         <div class="seven wide column">
-          <h4 class="ui inverted header">Thanks for your watching</h4>
-          <p>If you have any question,you can use contact me segment send message to me.In addition,you can be my friend through Facebook.</p>
+          <h4 class="ui inverted header">Thanks for your watching</h4>              
+          <p>If you have any question,you can use contact me segment send message to me.In addition,you can be my friend through Facebook.
+          </p>
+
         </div>
       </div>
       <div class="ui inverted divider"></div>
       <div class="ui horizontal inverted small divided link list">
-        <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Designed by PeiYao Chang</a>
+        <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Designed by TzuHan Hsu</a>
         <a class="item" href="#">Privacy Policy</a>
       </div>
     </div>
