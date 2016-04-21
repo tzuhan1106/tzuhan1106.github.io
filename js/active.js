@@ -36,7 +36,7 @@ $(document).ready(function(){
     
   });
   $("#mbtn4").click(function(){
-      $('html,body').animate({scrollTop:$('#contactMe').offset().top},600);
+      $('html,body').animate({scrollTop:$('#works').offset().top},600);
     
   });
   //control scroll back to top button
@@ -57,6 +57,10 @@ $(document).ready(function(){
       .modal('show');
   });
 
+  //show works hover
+  $('.special.cards .image').dimmer({
+    on: 'hover'
+  });
 
   //aniview control  
   $('.header').hover(
@@ -70,4 +74,7 @@ $(document).ready(function(){
        animateThreshold: 100,
        scrollPollInterval: 20
    }
+
 });
+
+
